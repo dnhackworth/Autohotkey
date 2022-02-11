@@ -1,10 +1,7 @@
-^+c::
+^g::
 {
  Send, ^c
  Sleep 50
- Run, https://www.google.com/search?q=%clipboard%
+ Run, http://www.google.com/search?q=`%22%clipboard%`%22
  Return
 }
-
-^+z::
-Run "https://www.reddit.com/"
