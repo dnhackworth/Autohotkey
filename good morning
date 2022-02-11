@@ -1,0 +1,11 @@
+
+^m::
+
+
+sites:="https://app.clickup.com|https://www.reddit.com/|https://netflix.com|https://www.facebook.com/|https://messages.google.com"
+
+Loop, Parse, sites, |
+	if A_Index = 1
+		Run Firefox.exe %A_LoopField%
+	else
+		Run Firefox.exe -new-tab %A_LoopField%
