@@ -1,0 +1,11 @@
+
+^a::
+
+
+sites:="https://d3ward.github.io/toolz/adblock.html"
+
+Loop, Parse, sites, |
+	if A_Index = 1
+		Run Firefox.exe %A_LoopField%
+	else
+		Run Firefox.exe -new-tab %A_LoopField%
